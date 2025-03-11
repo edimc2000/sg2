@@ -57,10 +57,10 @@ Find All Duplicate Elements
  duplicates in the array. For two elements to be considered as duplicated, value and data types of the
  elements must be same.
 Examples:
- getDuplicates([ 0, -4, -7, 0, 5, 10, 45, -7, 0 ]) -> [ 0, -7 ]
- getDuplicates([ 1, 2, 5, 0, 7 ]) -> [ ]
+ getDuplicates([ 0, -4, -7, 0, 5, 10, 45, -7, 0 ])               -> [ 0, -7 ]
+ getDuplicates([ 1, 2, 5, 0, 7 ])                                -> [ ]
  getDuplicates(['A', 'foo', '12’ , 12, 'bar', 'a', 'a', 'foo' ]) -> [ 'foo', 'a’ ]
- getDuplicates([ 'foo', '12' , 12, 'bar', 'a' ]) -> [ ]
+ getDuplicates([ 'foo', '12' , 12, 'bar', 'a' ])                 -> [ ]
 */
 console.log('--- page 22 - task 3'); 
 const getDuplicates = (arr) => [... new Set(arr.filter(element => arr.indexOf(element) !== arr.lastIndexOf(element)))]; 
