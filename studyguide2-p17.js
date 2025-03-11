@@ -56,11 +56,11 @@ Has Vowel
 NOTE: Vowels are = a, e, o, u, i.
 NOTE: Ignore upper/lower cases.
 Examples:
- hasVowel("") -> false
- hasVowel("Javascript") -> true
+ hasVowel("")            -> false
+ hasVowel("Javascript")  -> true
  hasVowel("Tech Global") -> true
- hasVowel("1234") -> false
- hasVowel("ABC") -> true
+ hasVowel("1234")        -> false
+ hasVowel("ABC")         -> true
 */
 
 console.log('--- page 17 - task 3'); 
@@ -82,12 +82,12 @@ Start Vowel
  given string starts with a vowel, and false otherwise when invoked.
  NOTE: Vowel letters: a, e, i o, u, A, E, I, O, U
 Examples:
- startVowel("Hello") -> false
- startVowel("Apple") -> true
- startVowel("orange") -> true
- startVowel("") -> false
- startVowel(" ") -> false 
- startVowel("123") -> false
+ startVowel("Hello")   -> false
+ startVowel("Apple")   -> true
+ startVowel("orange")  -> true
+ startVowel("")        -> false
+ startVowel(" ")       -> false 
+ startVowel("123")     -> false
 */
 
 console.log('--- page 17 - task 4'); 
