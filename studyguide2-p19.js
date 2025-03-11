@@ -61,9 +61,9 @@ Count Positive Numbers
 Write a function named countPos() which takes an array of numbers as an argument and returns how
 many elements are positive when invoked.
 Examples:
-countPos([-45, 0, 0, 34, 5, 67]) -> 3
+countPos([-45, 0, 0, 34, 5, 67])      -> 3
 countPos([-23, -4, 0, 2, 5, 90, 123]) -> 4
-countPos([0, -1, -2, -3]) -> 0
+countPos([0, -1, -2, -3])             -> 0
 */
 
 console.log('--- page 19 - task 2'); 

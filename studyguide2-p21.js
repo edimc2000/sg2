@@ -35,11 +35,11 @@ Count 3 or Less
 Write a function named as count3OrLess() which takes a string word as an argument and returns the
 count of the words that has 3 characters or less when invoked.
 Examples:
-count3OrLess("Hello") -> 0
-count3OrLess("Hi John") -> 1
-count3OrLess("JavaScript is fun") -> 2
+count3OrLess("Hello")               -> 0
+count3OrLess("Hi John")             -> 1
+count3OrLess("JavaScript is fun")   -> 2
 count3OrLess("My name is John Doe") -> 3
-count3OrLess("") -> 0
+count3OrLess("")                    -> 0
 */
 console.log('--- page 21 - task 2')
 // below does not count the empty string
@@ -56,10 +56,10 @@ Remove Extra Spaces
 Write a function named as removeExtraSpaces() which takes a string word as an argument and
 returns the string back with all extra spaces removed when invoked.
 Examples:
-removeExtraSpaces("Hello") -> "Hello"
-removeExtraSpaces(" Hello World ") -> "Hello World"
+removeExtraSpaces("Hello")              -> "Hello"
+removeExtraSpaces(" Hello World ")      -> "Hello World"
 removeExtraSpaces(" JavaScript is fun") -> "JavaScript is fun”
-removeExtraSpaces("") -> ""
+removeExtraSpaces("")                   -> ""
 */
 
 console.log('--- page 21 - task 3')

@@ -3,8 +3,8 @@ Average of Edges
  Write a function named averageOfEdges() which takes three number arguments and will return
  average of min and max numbers.
 Examples:
- averageOfEdges(0, 0, 0) -> 0
- averageOfEdges(0, 0, 6) -> 3
+ averageOfEdges(0, 0, 0)    -> 0
+ averageOfEdges(0, 0, 6)    -> 3
  averageOfEdges(-2, -2, 10) -> 4
  averageOfEdges(-3, 15, -3) -> 6
  averageOfEdges(10, 13, 20) -> 15

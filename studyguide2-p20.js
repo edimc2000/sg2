@@ -34,7 +34,7 @@ many elements are negative when invoked.
 Examples:
 countNeg([-45, 0, 0, 34, 5, 67])      -> 1
 countNeg([-23, -4, 0, 2, 5, 90, 123]) -> 2
-countNeg([0, -1, -2, -3])          -> 3
+countNeg([0, -1, -2, -3])             -> 3
 */
 
 console.log('\n--- page 20 - task 2'); 
@@ -68,9 +68,9 @@ Write a function named countWords() which takes a string argument and returns th
 words in the given string when invoked.
 NOTE: Be careful about the extra whitespaces before and after the string.
 Examples:
-countWords(" Javascript is fun ") -> 3
+countWords(" Javascript is fun ")                -> 3
 countWords("Cypress is an UI automation tool. ") -> 6
-countWords("1 2 3 4") -> 4
+countWords("1 2 3 4")                            -> 4
 */
 console.log('\n--- page 20 - task 4'); 
 const countWords = string => string.trim().split(' ').length; 
