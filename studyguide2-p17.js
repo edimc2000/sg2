@@ -31,11 +31,11 @@ First and Last Word
  first and last words from the given string when invoked.
  NOTE: Return empty string if the given string does not have any word.
 Examples:
- firstLastWord("Hello World") -> "HelloWorld"
+ firstLastWord("Hello World")       -> "HelloWorld"
  firstLastWord("I like JavaScript") -> "IJavaScript”
- firstLastWord("Hello") -> "HelloHello"
- firstLastWord("") -> ""
- firstLastWord(" ") -> ""
+ firstLastWord("Hello")             -> "HelloHello"
+ firstLastWord("")                  -> ""
+ firstLastWord(" ")                 -> ""
 */
 
 console.log('--- page 17 - task 2'); 
