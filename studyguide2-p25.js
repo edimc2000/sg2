@@ -22,9 +22,9 @@ const isPrime = (num) => {
             return !(num % i === 0 && num !== i );
         }
     } 
-    return false;
-    
-}
+    return false;   
+};
+
 console.log('isPrime(5)   -> ', isPrime(5) );
 console.log('isPrime(2)   -> ', isPrime(2) );
 console.log('isPrime(29)  -> ', isPrime(29) );
@@ -38,3 +38,29 @@ console.log('isPrime(23)   -> ', isPrime(23) );
 console.log('isPrime(13)   -> ', isPrime(13) );
 console.log('isPrime(11)   -> ', isPrime(11) );
 console.log('isPrime(7)   -> ', isPrime(7));
+
+
+/* page 25 task 2
+Add Two Arrays
+Write a function named add() which takes two array of numbers as argument and returns a new array
+with sum of given arrays elements.
+NOTE: Be careful about the array sizes as they could be different.
+Examples:
+add([3, 0, 0, 7, 5, 10], [6, 3, 2])                  -> [9, 3, 2, 7, 5, 10]
+add([10, 3, 6, 3, 2], [6, 8, 3, 0, 0, 7, 5, 10, 34]) -> [16, 11, 9, 3, 2, 7, 5, 10, 34]
+add([-5, 6, -3, 11], [5, -6, 3, -11])                -> [0, 0, 0, 0]
+*/
+console.log('--- page 25 - task 2'); 
+const add = (arr1, arr2) => {
+    let arrB, arrS; 
+    if (arr1.length >= arr2.length) { arrB = arr1; arrS = arr2}
+    else {arrB = arr2; arrS = arr1} 
+        return arrB.map ((element, index)=> {
+            if (arrS[index] === undefined) arrS[index] = 0; 
+        return arrS[index] + arrB[index]; 
+    });
+}
+
+console.log('add([3, 0, 0, 7, 5, 10], [6, 3, 2])                  -> ', add([3, 0, 0, 7, 5, 10], [6, 3, 2])   ); 
+console.log('add([10, 3, 6, 3, 2], [6, 8, 3, 0, 0, 7, 5, 10, 34]) -> ', add([10, 3, 6, 3, 2], [6, 8, 3, 0, 0, 7, 5, 10, 34]))  ; 
+console.log('add[-5, 6, -3, 11], [5, -6, 3, -11])                 -> ', add([-5, 6, -3, 11], [5, -6, 3, -11])    ); 
