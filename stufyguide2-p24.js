@@ -35,6 +35,7 @@ Examples:
  fizzBuzz(5, 5)     -> "Buzz"
  fizzBuzz(9, 6)     -> "Fizz | 7 | 8 | Fizz"
 */
+console.log('--- page 24 - task 2'); 
 const fizzBuzz = (num1, num2) => {
     let arr = []
     for (let i = Math.min(num1, num2); i <= Math.max(num1, num2); i++) {
@@ -65,7 +66,7 @@ Examples:
  isPalindrome("A")        -> true
  isPalindrome("")         -> true
 */
-
+console.log('--- page 24 - task 23'); 
 const isPalindrome = string => {
     let strArr1 = string.trim().toLowerCase().split('');
     let strArr2 = [... strArr1].reverse();
