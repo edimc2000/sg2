@@ -10,6 +10,7 @@ Examples:
  middleInt(-1, 25, 10) -> 10
 
 */
+console.log('--- page 22 - task 1'); 
 const middleInt = (num1, num2, num3) => [num1, num2, num3].sort((a,b)=>a-b)[1]
 
 console.log('middleInt(1, 2, 2)    -> ', middleInt(1, 2, 2));
