@@ -17,12 +17,11 @@ isPrime(1)  -> false
 
 console.log('--- page 25 - task 1'); 
 const isPrime = (num) => {
-    if(num > 1) {
-        for (i = 2 ; i <= num; i++  ){    
-            return !(num % i === 0 && num !== i );
-        }
-    } 
-    return false;   
+    if (num<2) return false; 
+    for (let i = 2; i <= Math.sqrt(num); i++){
+        if (num % i === 0) return false; 
+    }
+    return true; 
 };
 
 console.log('isPrime(5)   -> ', isPrime(5) );
@@ -37,7 +36,7 @@ console.log('isPrime(19)   -> ', isPrime(19) );
 console.log('isPrime(23)   -> ', isPrime(23) );
 console.log('isPrime(13)   -> ', isPrime(13) );
 console.log('isPrime(11)   -> ', isPrime(11) );
-console.log('isPrime(7)   -> ', isPrime(7));
+console.log('isPrime(9)   -> ', isPrime(9));
 
 
 /* page 25 task 2
@@ -55,8 +54,8 @@ const add = (arr1, arr2) => {
     let arrB, arrS; 
     if (arr1.length >= arr2.length) { arrB = arr1; arrS = arr2}
     else {arrB = arr2; arrS = arr1} 
-        return arrB.map ((element, index)=> {
-            if (arrS[index] === undefined) arrS[index] = 0; 
+    return arrB.map ((element, index)=> {
+        arrS[index] = arrS[index] ?? 0; 
         return arrS[index] + arrB[index]; 
     });
 }
