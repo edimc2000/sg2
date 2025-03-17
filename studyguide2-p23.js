@@ -58,7 +58,8 @@ Examples:
 */
 
 console.log('--- page 23 - task 3'); 
-const countConsonants = string => string.split('').reduce( (acc, curr) =>  'qwrtyplkjhgfdszxcvbnm'.includes(curr.toLowerCase()) ? acc+1 : acc, 0)
+const countConsonantsx = string => string.split('').reduce( (acc, curr) =>  'qwrtyplkjhgfdszxcvbnm'.includes(curr.toLowerCase()) ? acc+1 : acc, 0)
+const countConsonants = string => [...string].filter(char => /[b-df-hj-np-tv-z]/i.test(char)).length;
 
 console.log('countConsonants("Hello")             -> ', countConsonants("Hello") );
 console.log('countConsonants("Hello World")       -> ', countConsonants("Hello World") );
