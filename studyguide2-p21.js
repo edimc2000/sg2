@@ -14,14 +14,10 @@ factorial(1) -> 1
 console.log('--- page 21 - task 1')
 const factorial = num => {
     let result = 1;
-    if(num < 2) {
-        return result
-    } else {
-        for (i = 1; i <= num; i++)
-        result *= i;
-    }
+    if(num < 2) return result; 
+    for (i = 1; i <= num; i++) {result *= i}
     return result;   
-}
+}; 
 
 
 
