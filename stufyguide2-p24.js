@@ -41,7 +41,7 @@ const fizzBuzz = (num1, num2) => {
     for (let i = Math.min(num1, num2); i <= Math.max(num1, num2); i++) {
         arr.push(i)
     }
-    return arr.map( element => element % 5  === 0 && element %3 === 0 ?'"FizzBuzz' : element % 5  === 0 ? 'Buzz' : element % 3  === 0 ? 'Fizz' : element).join(' | ')
+    return arr.map( element => element % 5  === 0 && element % 3 === 0 ? 'FizzBuzz' : element % 5  === 0 ? 'Buzz' : element % 3  === 0 ? 'Fizz' : element).join(' | ')
 }
 
 console.log('fizzBuzz(13, 18)   -> ', fizzBuzz(13, 18));
