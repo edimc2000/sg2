@@ -67,6 +67,6 @@ console.log('--- page 22 - task 3');
 const getDuplicates = (arr) => [... new Set(arr.filter(element => arr.indexOf(element) !== arr.lastIndexOf(element)))]; 
 
 console.log(`getDuplicates([ 0, -4, -7, 0, 5, 10, 45, -7, 0 ])                -> `, getDuplicates([ 0, -4, -7, 0, 5, 10, 45, -7, 0 ]));
-console.log(`getDuplicates([ 1, 2, 5, 0, 7 ])                                 -> `,  getDuplicates([ 1, 2, 5, 0, 7 ]));
+console.log(`getDuplicates([ 1, 2, 5, 0, 7 ])                                 -> `, getDuplicates([ 1, 2, 5, 0, 7 ]));
 console.log(`getDuplicates(['A', 'foo', '12' , 12, 'bar', 'a', 'a', 'foo' ])  -> `, getDuplicates(['A', 'foo', '12' , 12, 'bar', 'a', 'a', 'foo' ]));
 console.log(`getDuplicates([ 'foo', '12' , 12, 'bar', 'a' ])                  -> `, getDuplicates([ 'foo', '12' , 12, 'bar', 'a' ]));

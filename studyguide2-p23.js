@@ -52,14 +52,14 @@ Count Consonants
  NOTE: A letter that is not vowel is considered as a consonant letter.
 Examples:
  countConsonants("Hello")             -> 3
- countConsonants("Hello World")       -> 8
- countConsonants("JavaScript is fun") -> 12
+ countConsonants("Hello World")       -> 8  // 7 space should not be counted 
+ countConsonants("JavaScript is fun") -> 12 // 10 space should not be counted 
  countConsonants("")                  -> 0
 */
 
 console.log('--- page 23 - task 3'); 
-const countConsonantsx = string => string.split('').reduce( (acc, curr) =>  'qwrtyplkjhgfdszxcvbnm'.includes(curr.toLowerCase()) ? acc+1 : acc, 0)
-const countConsonants = string => [...string].filter(char => /[b-df-hj-np-tv-z]/i.test(char)).length;
+const countConsonants = string => string.split('').reduce( (acc, curr) =>  'qwrtyplkjhgfdszxcvbnm'.includes(curr.toLowerCase()) ? acc+1 : acc, 0)
+
 
 console.log('countConsonants("Hello")             -> ', countConsonants("Hello") );
 console.log('countConsonants("Hello World")       -> ', countConsonants("Hello World") );
