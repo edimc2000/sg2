@@ -43,9 +43,6 @@ const swapFirstLastWord1 = string => {
     return arr.join(' ');
 }
 
-
-
-
 console.log('swapFirstLastWord("Hello World")       -> ', swapFirstLastWord("Hello World")  );
 console.log('swapFirstLastWord("I like JavaScript") -> ', swapFirstLastWord("I like JavaScript"));
 console.log('swapFirstLastWord("foo bar foo bar")   -> ', swapFirstLastWord("foo bar foo bar") );
@@ -54,7 +51,17 @@ console.log('swapFirstLastWord(" ")                 -> ', swapFirstLastWord(" ")
 console.log('swapFirstLastWord("Hello")             -> ', swapFirstLastWord("Hello"));
 console.log('swapFirstLastWord("Hello ")            -> ', swapFirstLastWord("Hello ") );
 
+console.log('\n--- page 19 - task 1 version 2 using map '); 
 
+const swapFirstLastWord2 = string =>  string.trim().split(' ').length < 2 ? '' 
+    : string.trim().split(' ').map((element, i, arr) => i === 0 ? (arr[arr.length - 1]) 
+    : i === arr.length - 1 ? arr[0]
+    : element).join(' '); 
+
+arrayOfGivens = ['Hello World', 'I like JavaScript', 'foo bar foo bar', ' ', '', 'Hello', 'Hello ' ]; 
+for(const element of arrayOfGivens) {
+    console.log(`swapFirstLastWord2(${element})`.padEnd(40, ' '),'->', swapFirstLastWord2(element));
+}
 
 /*
 Count Positive Numbers
@@ -98,4 +105,3 @@ console.log('getEvens(2, 7)  -> ', getEvens(2, 7));
 console.log('getEvens(17, 5) -> ', getEvens(17, 5)); 
 console.log('getEvens(4, 4)  -> ', getEvens(4, 4)); 
 console.log('getEvens(3, 3)  -> ', getEvens(3, 3) ); 
-
